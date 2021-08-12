@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #050922;
+}
+
+.navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  background-color: #161824;
+  border-bottom: 2px solid #25293d;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navigation-bar .navigation-bar-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+}
+
+.navigation-bar .navigation-bar-left .navigation-logo {
+  font-size: 27px;
+  color: white;
+}
+
+.navigation-bar .navigation-bar-left .navigation-news {
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.navigation-bar .navigation-bar-left .navigation-news:hover {
+  color: #6063ff;
+}
+
+.navigation-bar .navigation-bar-left .navigation-stocks {
+  color: white;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.navigation-bar .navigation-bar-left .navigation-stocks:hover {
+  color: #6063ff;
+}
+
+.navigation-bar .navigation-bar-middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: yellow;
+  width: 400px;
+}
+
+.navigation-bar .navigation-bar-middle input {
+  height: 28px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 0 5px;
+}
+
+.navigation-bar .navigation-bar-middle button {
+  height: 28px;
+  width: 100px;
+  border: 1px solid black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.navigation-bar .navigation-bar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+}
+
+.navigation-bar .navigation-bar-right .user-name-email-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navigation-bar .navigation-bar-right .user-avatar-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.navigation-bar .navigation-bar-right .user-avatar-container i {
+  position: absolute;
+}
+
+.homepage-news-section {
+  height: calc(100vh - 60px);
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.homepage-news-section .page-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: #161824;
+  color: white;
+}
+
+.homepage-news-section .page-header-container .header {
+  font-size: 38px;
+}
+
+.homepage-news-section .page-header-container .header-link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6063ff;
+  text-decoration: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.homepage-news-section .page-header-container .header-link:hover {
+  color: white;
+}
+
+.homepage-news-section .article-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 792px;
+  width: 100%;
+}
+
+.homepage-news-section .article-section .article-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 650px;
+  width: 1400px;
+  background-color: #161824;
+  border-radius: 10px;
+  border: 2px solid #25293d;
+}
+
+.homepage-news-section .article-section .article-container .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.homepage-news-section .article-section .article-container .articles img {
+  width: 220px;
+  padding: 20px;
+}
+
+.homepage-news-section .article-section .article-container .articles .article-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+}
+
+.homepage-news-section .article-section .article-container .articles .article-info-container a {
+  font-size: 25px;
+  color: #6063ff;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.homepage-news-section .article-section .article-container .articles .article-info-container a:hover {
+  color: white;
+}
+
+.homepage-news-section .article-section .article-container .articles .article-info-container p {
+  line-height: 1.5;
+  font-size: 17.5px;
+  font-weight: 300;
+}
+
+.homepage-news-section .article-section .article-0,
+.homepage-news-section .article-section .article-1,
+.homepage-news-section .article-section .article-2 {
+  border-bottom: 2px solid #25293d;
+}
+
+.news-section {
+  height: calc(100vh - 60px);
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.news-section .page-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: #161824;
+  color: white;
+}
+
+.news-section .page-header-container .header {
+  width: 1150px;
+  font-size: 38px;
+}
+
+.news-section .page-header-container .header-link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6063ff;
+  text-decoration: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.news-section .page-header-container .header-link:hover {
+  color: white;
+}
+
+.news-section .article-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3200px;
+  width: 100%;
+}
+
+.news-section .article-section .article-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 3100px;
+  width: 1400px;
+  background-color: #161824;
+  border-radius: 10px;
+  border: 2px solid #25293d;
+}
+
+.news-section .article-section .article-container .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  border-bottom: 2px solid #25293d;
+}
+
+.news-section .article-section .article-container .articles img {
+  width: 220px;
+  padding: 20px;
+}
+
+.news-section .article-section .article-container .articles .article-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 150px;
+}
+
+.news-section .article-section .article-container .articles .article-info-container a {
+  font-size: 25px;
+  color: #6063ff;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.news-section .article-section .article-container .articles .article-info-container a:hover {
+  color: white;
+}
+
+.news-section .article-section .article-container .articles .article-info-container p {
+  line-height: 1.5;
+  font-size: 17.5px;
+  font-weight: 300;
+}
+
+.news-section .article-section .article-container .article-19 {
+  border-bottom: none;
+}
+
+.stock-section {
+  height: calc(100vh - 60px);
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.stock-section .page-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+  width: 100%;
+  background-color: #161824;
+  color: white;
+}
+
+.stock-section .page-header-container .header {
+  width: 1150px;
+  font-size: 38px;
+}
+
+.stock-section .page-header-container .header-link {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6063ff;
+  text-decoration: none;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+}
+
+.stock-section .page-header-container .header-link:hover {
+  color: white;
+}
+
+.stock-section .stock-info-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 792px;
+  width: 100%;
+}
+
+.stock-section .stock-info-section .stock-info-chart-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+  width: 1000px;
+  background-color: #161824;
+  border-radius: 10px;
+  border: 2px solid #25293d;
+}
+
+.stock-section .stock-info-section .stock-info-chart-container .map-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+}
+
+.stock-section .stock-info-section .stock-info-chart-container .map-container .map-date-range {
+  border: 2px solid #25293d;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100px;
+}
+
+.stock-section .stock-info-section .stock-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 500px;
+  width: 400px;
+  background-color: #161824;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid #25293d;
+}
+
+.stock-section .stock-info-section .stock-info-container .stock-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 400px;
+  width: 300px;
+}
+
+.stock-section .stock-info-section .stock-info-container .stock-info .header {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.stock-section .stock-info-section .stock-info-container .stock-info .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 280px;
+}
+/*# sourceMappingURL=index.css.map */
